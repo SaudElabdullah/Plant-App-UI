@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:plant_app_ui/theme/app_colors.dart';
 import 'package:plant_app_ui/utils/size_config.dart';
+
 class BottomButton extends StatelessWidget {
   const BottomButton({Key? key}) : super(key: key);
 
@@ -28,10 +30,12 @@ class BottomButton extends StatelessWidget {
         child: Center(
           child: Text(
             'Change schedule',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: SizeConfig.textMultiplier! * 3,
-              fontWeight: FontWeight.w700,
+            style: GoogleFonts.notoSansDisplay(
+              textStyle: TextStyle(
+                color: Colors.white,
+                fontSize: SizeConfig.textMultiplier! * 3,
+                fontWeight: FontWeight.w700,
+              ),
             ),
           ),
         ),

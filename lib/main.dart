@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Plant app UI',
-      initialRoute: '/details',
+      initialRoute: '/',
       routes: {
         '/': (context) => const Plants(),
         '/details': (context) => const Details()

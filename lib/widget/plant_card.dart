@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:plant_app_ui/constants/constants.dart';
 import 'package:plant_app_ui/theme/app_colors.dart';
 import 'package:plant_app_ui/utils/size_config.dart';
@@ -15,26 +16,31 @@ class PlantWidget extends StatelessWidget {
     return Stack(
       alignment: AlignmentDirectional.center,
       children: [
-        Container(
-          width: SizeConfig.widthMultiplier! * 88,
-          height: SizeConfig.heightMultiplier! * 60,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                AppColors.primaryColor,
-                const Color(0xFF26584A),
-              ],
-              begin: const FractionalOffset(
-                0.0,
-                0.0,
+        GestureDetector(
+          onTap: (){
+            Navigator.pushNamed(context, '/details');
+          },
+          child: Container(
+            width: SizeConfig.widthMultiplier! * 88,
+            height: SizeConfig.heightMultiplier! * 60,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  AppColors.primaryColor,
+                  const Color(0xFF26584A),
+                ],
+                begin: const FractionalOffset(
+                  0.0,
+                  0.0,
+                ),
+                end: const FractionalOffset(
+                  1.0,
+                  1.0,
+                ),
+                stops: const [0.0, 0.8],
               ),
-              end: const FractionalOffset(
-                1.0,
-                1.0,
-              ),
-              stops: const [0.0, 0.8],
+              borderRadius: BorderRadius.circular(25.0),
             ),
-            borderRadius: BorderRadius.circular(25.0),
           ),
         ),
         Positioned(
@@ -42,9 +48,11 @@ class PlantWidget extends StatelessWidget {
           top: Constant.top,
           child: Text(
             name!,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: SizeConfig.textMultiplier! * 5,
+            style: GoogleFonts.playfairDisplay(
+              textStyle: TextStyle(
+                color: Colors.white,
+                fontSize: SizeConfig.textMultiplier! * 5,
+              ),
             ),
           ),
         ),
@@ -53,9 +61,11 @@ class PlantWidget extends StatelessWidget {
           top: SizeConfig.heightMultiplier! * 10.0,
           child: Text(
             type!,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: SizeConfig.textMultiplier! * 2,
+            style: GoogleFonts.notoSansDisplay(
+              textStyle: TextStyle(
+                color: Colors.white,
+                fontSize: SizeConfig.textMultiplier! * 2,
+              ),
             ),
           ),
         ),
@@ -85,16 +95,20 @@ class PlantWidget extends StatelessWidget {
                 children: [
                   Text(
                     'from',
-                    style: TextStyle(
-                      color: Colors.black38,
-                      fontSize: SizeConfig.textMultiplier! * 2,
+                    style: GoogleFonts.notoSansDisplay(
+                      textStyle: TextStyle(
+                        color: Colors.black38,
+                        fontSize: SizeConfig.textMultiplier! * 2,
+                      ),
                     ),
                   ),
                   Text(
                     '\$25',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: SizeConfig.textMultiplier! * 3,
+                    style: GoogleFonts.notoSansDisplay(
+                      textStyle: TextStyle(
+                        color: Colors.white,
+                        fontSize: SizeConfig.textMultiplier! * 3,
+                      ),
                     ),
                   ),
                 ],

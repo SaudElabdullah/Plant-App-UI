@@ -4,6 +4,7 @@ import 'package:plant_app_ui/theme/app_colors.dart';
 import 'package:plant_app_ui/utils/size_config.dart';
 import 'package:plant_app_ui/widget/bottom_button.dart';
 import 'package:plant_app_ui/widget/customed_tabs.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Details extends StatefulWidget {
   const Details({Key? key}) : super(key: key);
@@ -31,9 +32,11 @@ class _DetailsState extends State<Details> {
                       left: Constant.indentation,
                       child: Text(
                         'Living Room',
-                        style: TextStyle(
-                          color: AppColors.white.withOpacity(0.5),
-                          fontSize: SizeConfig.textMultiplier! * 2,
+                        style: GoogleFonts.notoSansDisplay(
+                          textStyle: TextStyle(
+                            color: AppColors.white.withOpacity(0.5),
+                            fontSize: SizeConfig.textMultiplier! * 2,
+                          ),
                         ),
                       ),
                     ),
@@ -42,9 +45,11 @@ class _DetailsState extends State<Details> {
                       left: Constant.indentation,
                       child: Text(
                         'Fiddle Leaf',
-                        style: TextStyle(
-                          color: AppColors.white,
-                          fontSize: SizeConfig.textMultiplier! * 5,
+                        style: GoogleFonts.playfairDisplay(
+                          textStyle: TextStyle(
+                            color: AppColors.white,
+                            fontSize: SizeConfig.textMultiplier! * 5,
+                          ),
                         ),
                       ),
                     ),
@@ -71,9 +76,11 @@ class _DetailsState extends State<Details> {
                             ),
                             Text(
                               'Add Photo',
-                              style: TextStyle(
-                                color: AppColors.white,
-                                fontSize: SizeConfig.textMultiplier! * 2,
+                              style: GoogleFonts.notoSansDisplay(
+                                textStyle: TextStyle(
+                                  color: AppColors.white,
+                                  fontSize: SizeConfig.textMultiplier! * 2,
+                                ),
                               ),
                             ),
                           ],
@@ -116,19 +123,22 @@ class _DetailsState extends State<Details> {
                                   ),
                                   Text(
                                     'Water',
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontSize: SizeConfig.textMultiplier! * 2,
+                                    style: GoogleFonts.notoSansDisplay(
+                                      textStyle: TextStyle(
+                                        color: AppColors.white,
+                                        fontSize:
+                                            SizeConfig.textMultiplier! * 2,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: SizeConfig.heightMultiplier! * 0.5,
                                   ),
                                   Text(
                                     'In 6 Days',
-                                    style: TextStyle(
-                                      color: AppColors.white.withOpacity(0.5),
-                                      fontSize: SizeConfig.textMultiplier! * 2,
+                                    style: GoogleFonts.notoSansDisplay(
+                                      textStyle: TextStyle(
+                                        color: AppColors.white.withOpacity(0.5),
+                                        fontSize:
+                                            SizeConfig.textMultiplier! * 2,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -169,19 +179,22 @@ class _DetailsState extends State<Details> {
                                   ),
                                   Text(
                                     'Fertilizing',
-                                    style: TextStyle(
-                                      color: AppColors.white,
-                                      fontSize: SizeConfig.textMultiplier! * 2,
+                                    style: GoogleFonts.notoSansDisplay(
+                                      textStyle: TextStyle(
+                                        color: AppColors.white,
+                                        fontSize:
+                                            SizeConfig.textMultiplier! * 2,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: SizeConfig.heightMultiplier! * 0.5,
                                   ),
                                   Text(
                                     'In 28 Days',
-                                    style: TextStyle(
-                                      color: AppColors.white.withOpacity(0.5),
-                                      fontSize: SizeConfig.textMultiplier! * 2,
+                                    style: GoogleFonts.notoSansDisplay(
+                                      textStyle: TextStyle(
+                                        color: AppColors.white.withOpacity(0.5),
+                                        fontSize:
+                                            SizeConfig.textMultiplier! * 2,
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -225,9 +238,11 @@ class _DetailsState extends State<Details> {
                           children: [
                             Text(
                               'Care',
-                              style: TextStyle(
-                                fontSize: SizeConfig.textMultiplier! * 5,
-                                color: AppColors.primaryColor,
+                              style: GoogleFonts.playfairDisplay(
+                                textStyle: TextStyle(
+                                  fontSize: SizeConfig.textMultiplier! * 5,
+                                  color: AppColors.primaryColor,
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -243,9 +258,11 @@ class _DetailsState extends State<Details> {
                             ),
                             Text(
                               'light',
-                              style: TextStyle(
-                                fontSize: SizeConfig.textMultiplier! * 4,
-                                color: AppColors.primaryColor,
+                              style: GoogleFonts.playfairDisplay(
+                                textStyle: TextStyle(
+                                  fontSize: SizeConfig.textMultiplier! * 4,
+                                  color: AppColors.primaryColor,
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -253,9 +270,11 @@ class _DetailsState extends State<Details> {
                             ),
                             Text(
                               Constant.dumText,
-                              style: TextStyle(
-                                fontSize: SizeConfig.textMultiplier! * 3,
-                                color: AppColors.primaryColor,
+                              style: GoogleFonts.notoSansDisplay(
+                                textStyle: TextStyle(
+                                  fontSize: SizeConfig.textMultiplier! * 3,
+                                  color: AppColors.primaryColor,
+                                ),
                               ),
                             ),
                             SizedBox(

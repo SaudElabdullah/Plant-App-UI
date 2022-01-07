@@ -4,6 +4,7 @@ import 'package:plant_app_ui/theme/app_colors.dart';
 import 'package:plant_app_ui/utils/size_config.dart';
 import 'package:date_time_format/date_time_format.dart';
 import 'package:plant_app_ui/widget/plant_card.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Plants extends StatefulWidget {
   const Plants({Key? key}) : super(key: key);
@@ -45,9 +46,11 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                       left: Constant.indentation,
                       child: Text(
                         DateTime.now().format('D, M j'),
-                        style: TextStyle(
-                          color: Colors.black54,
-                          fontSize: SizeConfig.textMultiplier! * 2,
+                        style: GoogleFonts.notoSansDisplay(
+                          textStyle: TextStyle(
+                            color: Colors.black54,
+                            fontSize: SizeConfig.textMultiplier! * 2,
+                          ),
                         ),
                       ),
                     ),
@@ -56,9 +59,11 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                       left: Constant.indentation,
                       child: Text(
                         'Top Picks',
-                        style: TextStyle(
-                          color: AppColors.primaryColor,
-                          fontSize: SizeConfig.textMultiplier! * 5,
+                        style: GoogleFonts.playfairDisplay(
+                          textStyle: TextStyle(
+                            color: AppColors.primaryColor,
+                            fontSize: SizeConfig.textMultiplier! * 5,
+                          ),
                         ),
                       ),
                     ),
@@ -92,8 +97,7 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                         child: Column(
                           children: [
                             Container(
-                              //TODO: refactor this? The height.
-                              height: 60,
+                              height: SizeConfig.heightMultiplier! * 8,
                               decoration: BoxDecoration(
                                 color: Colors.grey[300],
                                 borderRadius: BorderRadius.circular(
@@ -102,9 +106,11 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                               ),
                               child: TabBar(
                                 padding: const EdgeInsets.all(4.0),
-                                labelStyle: TextStyle(
-                                  fontSize: SizeConfig.textMultiplier! * 2.5,
-                                  fontWeight: FontWeight.w500,
+                                labelStyle: GoogleFonts.notoSansDisplay(
+                                  textStyle: TextStyle(
+                                    fontSize: SizeConfig.textMultiplier! * 2.5,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                                 ),
                                 labelColor: AppColors.primaryColor,
                                 unselectedLabelColor: AppColors.primaryColor,
