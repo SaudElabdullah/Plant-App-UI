@@ -3,7 +3,6 @@ import 'package:plant_app_ui/constants/constants.dart';
 import 'package:plant_app_ui/theme/app_colors.dart';
 import 'package:plant_app_ui/utils/size_config.dart';
 import 'package:date_time_format/date_time_format.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:plant_app_ui/widget/plant_card.dart';
 
 class Plants extends StatefulWidget {
@@ -93,6 +92,7 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                         child: Column(
                           children: [
                             Container(
+                              //TODO: refactor this? The height.
                               height: 60,
                               decoration: BoxDecoration(
                                 color: Colors.grey[300],
@@ -104,7 +104,7 @@ class _PlantsState extends State<Plants> with SingleTickerProviderStateMixin {
                                 padding: const EdgeInsets.all(4.0),
                                 labelStyle: TextStyle(
                                   fontSize: SizeConfig.textMultiplier! * 2.5,
-                                  fontWeight: FontWeight.w700,
+                                  fontWeight: FontWeight.w500,
                                 ),
                                 labelColor: AppColors.primaryColor,
                                 unselectedLabelColor: AppColors.primaryColor,

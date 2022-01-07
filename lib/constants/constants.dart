@@ -4,4 +4,10 @@ class Constant{
   static double indentation = SizeConfig.widthMultiplier! * 5.0;
   static double top = SizeConfig.heightMultiplier! * 3.0;
   static double shadow = 5;
+  static String dumText = 'Lorem ipsum dolor sit amet, consectetur adipiscing '
+      'elit. Quisque vel vehicula metus. Interdum et malesuada fames ac '
+      'ante ipsum primis in faucibus. Quisque venenatis eros ligula, '
+      'bibendum posuere est facilisis at. Pellentesque habitant morbi '
+      'tristique senectus et netus et malesuada fames ac turpis egestas.'
+      ' Nulla a diam metus. Proin felis.';
 }
