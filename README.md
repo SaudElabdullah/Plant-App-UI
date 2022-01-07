@@ -1,6 +1,7 @@
 # plant_app_ui
 
-A new Flutter project.
+This an implementation of a UI design plant app. I hope this help some one in the fututre.
+Link to desing: https://dribbble.com/shots/15415849-Vera-Plant-Growing-App-Redesign/attachments/7182810?mode=media
 
 ## Getting Started
 
